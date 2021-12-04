@@ -5,7 +5,7 @@ from pyforest import *
 #naming our app as app
 app= Flask(__name__)
 #loading the pickle file for creating the web app
-model= joblib.load(open("model.pkl", "rb"))
+model= joblib.load(open("./model.pkl", "rb"))
 
 #defining the different pages of html and specifying the features required to be filled in the html form
 @app.route("/")
