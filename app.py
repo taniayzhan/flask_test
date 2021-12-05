@@ -8,7 +8,7 @@ app= Flask(__name__)
 import os
 print(os.getcwd())
 
-model= joblib.load(open("flask_app/model.pkl", "rb"))
+model= joblib.load(open("flask_test/model.pkl", "rb"))
 
 #defining the different pages of html and specifying the features required to be filled in the html form
 @app.route("/")
